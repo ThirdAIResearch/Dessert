@@ -1,0 +1,9 @@
+[submodule "deps/pybind"]
+	path = deps/pybind
+	url = https://github.com/pybind/pybind11
+[submodule "deps/eigen"]
+	path = deps/eigen
+	url = https://github.com/libigl/eigen
+[submodule "deps/cereal"]
+	path = deps/cereal
+	url = https://github.com/USCiLab/cereal

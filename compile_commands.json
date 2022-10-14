@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/home/josh/Dessert/build",
+  "command": "/usr/bin/g++  -Ddessert_py_EXPORTS -isystem /home/josh/Dessert/deps/eigen -isystem /home/josh/Dessert/deps/cereal/include -isystem /home/josh/Dessert/. -isystem /home/josh/Dessert/deps/pybind/include -isystem /usr/include/python3.8  -fPIC -fvisibility=hidden   -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -pedantic -Ofast -g -fno-omit-frame-pointer -flto -fno-fat-lto-objects -fopenmp -std=gnu++17 -o CMakeFiles/dessert_py.dir/src/MaxFlash.cc.o -c /home/josh/Dessert/src/MaxFlash.cc",
+  "file": "/home/josh/Dessert/src/MaxFlash.cc"
+},
+{
+  "directory": "/home/josh/Dessert/build",
+  "command": "/usr/bin/g++  -Ddessert_py_EXPORTS -isystem /home/josh/Dessert/deps/eigen -isystem /home/josh/Dessert/deps/cereal/include -isystem /home/josh/Dessert/. -isystem /home/josh/Dessert/deps/pybind/include -isystem /usr/include/python3.8  -fPIC -fvisibility=hidden   -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -pedantic -Ofast -g -fno-omit-frame-pointer -flto -fno-fat-lto-objects -fopenmp -std=gnu++17 -o CMakeFiles/dessert_py.dir/src/MaxFlashArray.cc.o -c /home/josh/Dessert/src/MaxFlashArray.cc",
+  "file": "/home/josh/Dessert/src/MaxFlashArray.cc"
+},
+{
+  "directory": "/home/josh/Dessert/build",
+  "command": "/usr/bin/g++  -Ddessert_py_EXPORTS -isystem /home/josh/Dessert/deps/eigen -isystem /home/josh/Dessert/deps/cereal/include -isystem /home/josh/Dessert/. -isystem /home/josh/Dessert/deps/pybind/include -isystem /usr/include/python3.8  -fPIC -fvisibility=hidden   -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -pedantic -Ofast -g -fno-omit-frame-pointer -flto -fno-fat-lto-objects -fopenmp -std=gnu++17 -o CMakeFiles/dessert_py.dir/src/SRP.cc.o -c /home/josh/Dessert/src/SRP.cc",
+  "file": "/home/josh/Dessert/src/SRP.cc"
+},
+{
+  "directory": "/home/josh/Dessert/build",
+  "command": "/usr/bin/g++  -Ddessert_py_EXPORTS -isystem /home/josh/Dessert/deps/eigen -isystem /home/josh/Dessert/deps/cereal/include -isystem /home/josh/Dessert/. -isystem /home/josh/Dessert/deps/pybind/include -isystem /usr/include/python3.8  -fPIC -fvisibility=hidden   -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -pedantic -Ofast -g -fno-omit-frame-pointer -flto -fno-fat-lto-objects -fopenmp -std=gnu++17 -o CMakeFiles/dessert_py.dir/python_bindings/DessertPython.cc.o -c /home/josh/Dessert/python_bindings/DessertPython.cc",
+  "file": "/home/josh/Dessert/python_bindings/DessertPython.cc"
+}
+]
