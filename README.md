@@ -1,5 +1,5 @@
 # Dessert
-DESSERT (DESSERT Effeciently Searches Sets of Embeddings via Retrieval Tables) is a set of vector Search algorithm written in C++ with python bindings.
+DESSERT (DESSERT Effeciently Searches Sets of Embeddings via Retrieval Tables) is a set of vector search algorithm written in C++ with python bindings.
 
 
 ## Installation
@@ -19,7 +19,7 @@ python3 graph_synthetic.py
 ```
 ## Reproducing MSMarco Experiments
 
-Reproducing the MSMarco experiments from our paper is more involved. You will need to create a folder that has all of the MSMarco ColBERT embeddings and doclens in .npy format, the ColBERT centroids in .npy format, and queries.dev.small.tsv and qrels.dev.small.tsv (which you can get directly from downloading MSMarco from the official source). To get the ColBERT embeddings, you will need to run ColBERT (from their official repository) with the index function in  modify the index function in collection_indexer.py modified as follows:
+Reproducing the MSMarco experiments from our paper is more involved. You will need to create a folder that has all of the MSMarco ColBERT embeddings and doclens in .npy format, the ColBERT centroids in .npy format, and queries.dev.small.tsv and qrels.dev.small.tsv (which you can get directly from downloading MSMarco from the official source). To get the ColBERT embeddings, you will need to run ColBERT (you can run any of the indexing scripts from their official repository with their msmarco pretrained model) with the index function in collection_indexer.py modified as follows:
 
 
     embs, doclens = self.encoder.encode_passages(passages)
