@@ -9,6 +9,8 @@ You can install DESSERT by cloning and ```cd```ing into this repo and then runni
 
 ## Example Usage
 
+Below is an example showing usage of DESSERT's main functionality: indexing, searching, and saving and loading the index.
+
 ```python
 
 import dessert_py
