@@ -7,6 +7,46 @@ DESSERT (DESSERT Effeciently Searches Sets of Embeddings via Retrieval Tables) i
 You can install DESSERT by cloning and ```cd```ing into this repo and then running ```pip3 install .```. You will need to have a C++ compiler installed on your machine, as well as Python 3.8+.
 
 
+## Example Usage
+
+```python
+
+import dessert_py
+
+
+# Create index
+index = dessert_py.DocRetrieval(
+    dense_input_dimension=128,
+    num_tables=32,
+    hashes_per_table=6,
+    centroids=centroids,  # Centroids should be a 2d array of centroids for the distribution of individual vectors
+)
+
+# Add documents
+for index, embeddings, centroid_ids in enumerate(docs):
+    # Embeddings should be a 2d array of dense_input_dimension=128
+    # centroid_ids should be a 1d array of indices that correspond to the nearest centroids to each embedding in embeddings
+    index.add_doc(
+        doc_id="DOC" + str(index),
+        doc_embeddings=embeddings,
+        doc_centroid_ids=centroid_ids,
+    )
+
+# Serialize and deserialize
+index.serialize_to_file(serialize_file_name)
+index = dessert_py.DocRetrieval.deserialize_from_file(serialize_file_name)
+
+
+# Search
+for query_embeddings, centroid_ids in enumerate(queries):
+    results = index.query(
+        query_embeddings,
+        num_to_rerank=2000,  # How many documents to retrieve from the centroid id prefilter and then rerank with DESSERT
+        top_k=100,  # How many documents to return
+        query_centroid_ids=centroid_ids,
+    )
+
+```
     
 ## Reproducing Synthetic Experiments
 
