@@ -83,3 +83,16 @@ The ColBERT centroids are automatically saved as part of indexing, so you can ju
 Finally, you should change the FOLDER variable in experiments/msmarco.py to be the local folder you are using, and then you can run
 
 ```python3 msmarco.py```
+
+
+## Citation
+
+If you find DESSERT useful, we'd love if you cited our paper:
+
+@article{engels2024dessert,
+  title={DESSERT: An Efficient Algorithm for Vector Set Search with Vector Set Queries},
+  author={Engels, Joshua and Coleman, Benjamin and Lakshman, Vihan and Shrivastava, Anshumali},
+  journal={Advances in Neural Information Processing Systems},
+  volume={36},
+  year={2024}
+}
