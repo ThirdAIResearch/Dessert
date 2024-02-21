@@ -89,6 +89,7 @@ Finally, you should change the FOLDER variable in experiments/msmarco.py to be t
 
 If you find DESSERT useful, we'd love if you cited our paper:
 
+```
 @article{engels2024dessert,
   title={DESSERT: An Efficient Algorithm for Vector Set Search with Vector Set Queries},
   author={Engels, Joshua and Coleman, Benjamin and Lakshman, Vihan and Shrivastava, Anshumali},
@@ -96,3 +97,4 @@ If you find DESSERT useful, we'd love if you cited our paper:
   volume={36},
   year={2024}
 }
+```
